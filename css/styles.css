@@ -10993,3 +10993,17 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+.card-deck {
+  display: flex; /* Ensure flex display */
+  flex-direction: row; /* Ensure horizontal alignment */
+  justify-content: space-between; /* Space out cards */
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.card-deck .card {
+  flex: 1; /* Allow cards to grow */
+  margin: 0 15px; /* Add horizontal margin */
+  max-width: 30%; /* Limit width to allow for 3 cards side by side */
+}
